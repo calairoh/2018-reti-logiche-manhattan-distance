@@ -64,12 +64,12 @@ begin
     begin
         reset <= '1';
         start <= '0';
-        wait for 5ns;
+        wait for 10ns;
         reset <= '0';
         start <= '1';
         wait for 20 ns;
         start <= '0';
-        wait for 2000ns;
+        wait for 3000ns;
         
         assert false severity failure; 
     end process;

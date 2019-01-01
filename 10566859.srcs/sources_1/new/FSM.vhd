@@ -91,7 +91,7 @@ begin
             counter_reg <= "00";
             centroid_counter_reg <= "000";
             curr_address_reg <= "0000000000000001";
-            max_distance_reg <= MAXDISTANCEVALUE;
+            max_distance_reg <= MAXDISTANCEVALUE;            
         elsif i_clk'event and i_clk = '1' then
             state_reg <= state_next;
             counter_reg <= counter_next;
@@ -111,6 +111,7 @@ begin
                 centroid_counter_next <= "000";
                 curr_address_next <= "0000000000000001";
                 max_distance_next <= MAXDISTANCEVALUE;
+                out_bitmask_reg <= "00000000";
                 -- States
                 state_next <= idle;
                 if i_start = '1' then
