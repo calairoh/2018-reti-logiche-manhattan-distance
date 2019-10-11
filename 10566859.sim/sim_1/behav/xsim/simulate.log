@@ -1,5 +1,0 @@
-Vivado Simulator 2018.2
-Time resolution is 1 ps
-Failure: Assertion violation
-Time: 3030 ns  Iteration: 0  Process: /tb_FSM/line__63  File: C:/VivadoProjects/10566859/10566859.srcs/sim_1/new/tb_FSM.vhd
-$finish called at time : 3030 ns : File "C:/VivadoProjects/10566859/10566859.srcs/sim_1/new/tb_FSM.vhd" Line 74
